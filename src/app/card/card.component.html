@@ -1,0 +1,66 @@
+<mat-card
+  [style]="
+    'height: ' +
+    height +
+    ';' +
+    'background: ' +
+    background +
+    ';' +
+    'border-radius: ' +
+    borderRadius +
+    ';'
+  "
+>
+  <mat-card-subtitle>
+    <strong [style]="'color: ' + colorSubtitle + ';'">
+      {{ subtitle }}
+    </strong>
+  </mat-card-subtitle>
+  <mat-card-title [style]="'color: ' + colorTitle + ';'">
+    {{ title1 }}<b>{{ title2 }}</b>
+  </mat-card-title>
+  <mat-list>
+    <mat-divider
+      style="display: flex; justify-content: center; position: relative"
+    ></mat-divider>
+    <mat-list-item
+      class="list-item"
+      style="display: flex; justify-content: center"
+    >
+      <strong [style]="'color: ' + colorItem1 + ';'">
+        {{ listItem1 }}
+      </strong>
+    </mat-list-item>
+    <mat-divider
+      style="display: flex; justify-content: center; position: relative"
+    ></mat-divider>
+    <mat-list-item
+      class="list-item"
+      style="display: flex; justify-content: center"
+    >
+      <strong [style]="'color: ' + colorItem2 + ';'">
+        {{ listItem2 }}
+      </strong>
+    </mat-list-item>
+    <mat-divider
+      style="display: flex; justify-content: center; position: relative"
+    ></mat-divider>
+    <mat-list-item
+      class="list-item"
+      style="display: flex; justify-content: center"
+    >
+      <strong [style]="'color: ' + colorItem3 + ';'">
+        {{ listItem3 }}
+      </strong>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+  <button
+    (click)="showSnackBar()"
+    [style]="
+      'border-color: ' + borderColorButton + ';' + 'color: ' + colorButton + ';'
+    "
+  >
+    LEARN MORE
+  </button>
+</mat-card>
